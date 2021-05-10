@@ -29,6 +29,7 @@ function App() {
             {profile.map((p) => (
               <a
                 className="applyNowNav"
+                key={p.id}
                 href={p.loanLink}
                 target="_blank"
                 rel="noreferrer"

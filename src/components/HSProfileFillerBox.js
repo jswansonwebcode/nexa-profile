@@ -10,7 +10,7 @@ export default function HSProfileFillerBox() {
       <div className="col-2">
         <div className="card card-body delta">
           {profile.map((p) => (
-            <ul>
+            <ul key={p.id}>
               <li>
                 <img className="smallTwo" src={logo} alt="logo"></img>
               </li>
@@ -36,14 +36,14 @@ export default function HSProfileFillerBox() {
       <div className="col-2">
         <div className="card card-body delta">
           {profile.map((p) => (
-            <ul>
+            <ul key={p.id}>
               <li>
                 <h1>Contact Us</h1>
               </li>
               <li>
                 <h3>
-                  <i class="fas fa-map-marker-alt"></i> 3100 W Ray RD STE 201
-                  Office # 209, Chandler AZ 85226
+                  <i className="fas fa-map-marker-alt"></i> 3100 W Ray RD STE
+                  201 Office # 209, Chandler AZ 85226
                 </h3>
                 <hr></hr>
               </li>
@@ -70,7 +70,7 @@ export default function HSProfileFillerBox() {
       <div className="col-2">
         <div className="card card-body delta">
           {profile.map((p) => (
-            <ul>
+            <ul key={p.id}>
               <li>
                 <h1>Resources</h1>
               </li>

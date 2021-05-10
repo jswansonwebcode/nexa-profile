@@ -28,9 +28,8 @@ export default function Menu() {
         <li>
           <NavLink
             to={"/"}
-            activeClassName="active-link"
+            activeclassname="active-link"
             onClick={() => closeMenu()}
-            exact
           >
             Home
           </NavLink>
@@ -38,9 +37,8 @@ export default function Menu() {
         <li>
           <NavLink
             to="/loan-programs"
-            activeClassName="active-link"
+            activeclassname="active-link"
             onClick={() => closeMenu()}
-            exact
           >
             Loan Programs
           </NavLink>
@@ -48,9 +46,8 @@ export default function Menu() {
         <li>
           <a
             href="https://nexamortgage.com/privacy-policy/"
-            activeClassName="active-link"
+            activeclassname="active-link"
             onClick={() => closeMenu()}
-            exact
             target="_blank"
             rel="noreferrer"
           >
@@ -61,10 +58,10 @@ export default function Menu() {
           {profile.map((p) => (
             <a
               className="applyNowNav"
+              key={p.id}
               href={p.loanLink}
-              activeClassName="active-link"
+              activeclassname="active-link"
               onClick={() => closeMenu()}
-              exact
               target="_blank"
               rel="noreferrer"
             >
