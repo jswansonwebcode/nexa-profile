@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import PROFILE from "../profile.js";
+import PROFILE from "../.profile.js";
 
 export default function Menu() {
   const { profile } = PROFILE;

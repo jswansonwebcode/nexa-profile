@@ -1,6 +1,6 @@
 import React from "react";
 import profilePic from "../img/profilePic.jpg";
-import PROFILE from "../profile.js";
+import PROFILE from "../.profile.js";
 
 export default function HSProfilePicInfo() {
   const { profile } = PROFILE;

@@ -4,7 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import logo from "./img/nexa-trans-white.png";
 import LoanProgramScreen from "./screens/LoanProgramScreen";
 import Menu from "./components/Menu";
-import PROFILE from "./profile.js";
+import PROFILE from "./.profile.js";
 
 function App() {
   const { profile } = PROFILE;
