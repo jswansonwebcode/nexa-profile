@@ -1,0 +1,371 @@
+html {
+  font-size: 62.5%; /* 16px x 62.5 = 10px = 1 rem */
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+}
+/* This connects to public index.html */
+#root {
+  height: 100%;
+}
+
+/* Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 8rem 1fr 5rem;
+  height: 100%;
+}
+header {
+  grid-area: header;
+  background-color: #203040;
+}
+main {
+  grid-area: main;
+  /* padding: 7rem; */
+}
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: #ffffff;
+}
+/* Common */
+/* h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+} */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+/* Header */
+header a {
+  color: #ffffff;
+  padding: 1rem;
+}
+a.brand {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.applyNowNav {
+  color: #203040;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  padding: 11px 13px;
+  margin: 0 10px;
+}
+.applyNowNav:hover {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: #203040;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.row.center {
+  justify-content: center;
+}
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+.row.top {
+  align-items: flex-start;
+}
+.row.top.alpha {
+  margin-top: 80px;
+}
+.col-1 {
+  /* flex: 1 1 25rem; */
+  width: 420px;
+}
+.col-2 {
+  width: 300px;
+  /* flex: 1 1 25rem; */
+}
+.min-30 {
+  min-width: 30rem;
+}
+/* Images */
+/* img {
+  border-radius: 29rem;
+} */
+img.small {
+  max-width: 15rem;
+  width: 100%;
+  padding-top: 10px;
+  /* margin-left: 60px; */
+}
+img.medium {
+  max-width: 45rem;
+  width: 100%;
+  margin-bottom: 40px;
+}
+img.large {
+  width: 100%;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+}
+img.smallTwo {
+  max-width: 15rem;
+  width: 100%;
+}
+/* Card */
+.card {
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  /* margin: 1rem; */
+  text-align: center;
+  height: 390px;
+}
+.card-body {
+  padding: 3.5rem;
+}
+.card-body > * {
+  margin-bottom: 3rem;
+}
+/* Personal Information */
+.piName {
+  font-size: 45px;
+}
+.piTalk {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+.phoneLink {
+  color: black;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ced4d7;
+  border-radius: 10px;
+  padding: 21px 24px;
+}
+.phoneLink:hover {
+  color: black;
+  text-decoration: none;
+}
+.applyNow {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #203040;
+  border-radius: 10px;
+  padding: 11px 14px;
+}
+.applyNow:hover {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+/* Filler Section */
+.hsContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hsContainer > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #000000;
+}
+/* Footer Links */
+.delta {
+  background-color: #203040;
+  color: white;
+  height: 320px;
+  margin: 40px 0;
+}
+.footerPhoneLink {
+  color: white;
+}
+.footerPhoneLink:hover {
+  text-decoration: underline;
+  color: white;
+}
+/* Loan Programs */
+.lp {
+  align-items: center;
+  margin: 0 40px;
+  background-color: #203040;
+  color: white;
+}
+.lpInfo {
+  max-width: 700px;
+  text-align: left;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 20px auto;
+  padding: 2px 40px;
+}
+.lpcontent {
+  margin-bottom: 20px;
+}
+/* sidebar Nav */
+.navBar {
+  position: relative;
+}
+
+/* .navBar button {
+  position: fixed;
+  right: 80px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+} */
+.navBar button {
+  background: transparent;
+  border: none;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: #203040;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 200px;
+  z-index: 9;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+.menuNav li:first-child {
+  margin-top: 10rem;
+  margin-left: 20px;
+}
+.menuNav li:not(:first-child) {
+  margin: 50px 20px;
+}
+.hamburger {
+  position: absolute;
+  top: 5%;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+.hamburger > span {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  position: relative;
+  background-color: white;
+}
+.notHamburger {
+  /* position: absolute; */
+  /* top: 5%; */
+  /* left: 2rem; */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  top: 35px;
+  z-index: 10;
+}
+.close-x {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 43%,
+      #fff 45%,
+      #fff 55%,
+      rgba(0, 0, 0, 0) 57%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 43%,
+      #fff 45%,
+      #fff 55%,
+      transparent 57%,
+      transparent 100%
+    );
+}
+.nonMobileNavLinks {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nonMobileNavLinks {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nonMobileNavLinks {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
