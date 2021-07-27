@@ -19,7 +19,7 @@ export default function HSProfileFillerBox() {
                 <hr></hr>
               </li>
               <li>
-                <h3>NMLS# {p.nmls2}</h3>
+                <h3>NMLS# {p.nmls}</h3>
                 <hr></hr>
               </li>
               <li>
@@ -97,7 +97,7 @@ export default function HSProfileFillerBox() {
               </li>
               <li>
                 <a className="footerPhoneLink" href={p.nmlsLink2}>
-                  <h3>NMLS 35815</h3>
+                  <h3>NMLS {p.nmls}</h3>
                 </a>
               </li>
             </ul>

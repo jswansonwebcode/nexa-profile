@@ -360,6 +360,9 @@ img.smallTwo {
   .menu {
     display: block;
   }
+  .hsContainer > h1 {
+    top: 40%;
+  }
 }
 @media screen and (min-width: 769px) {
   .nonMobileNavLinks {
